@@ -16,8 +16,6 @@ class UltralyticsModel:
             model = YOLO(weights)
         elif 'rtdetr' in weights:
             model = RTDETR(weights)
-        # elif 'yolo_nas' in weights:
-        #     model = NAS(weights)
         return model
     
     def train(self):
